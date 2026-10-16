@@ -1,1 +1,37 @@
-/*  your css code here. If applicable */
+#output {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#output img {
+  width: 300px;
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#error {
+  color: red;
+  margin: 10px 0;
+}
+
+#loading {
+  text-align: center;
+}
+
+.spinner {
+  width: 35px;
+  height: 35px;
+  margin: 10px auto;
+  border: 4px solid #ddd;
+  border-top-color: #007bff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
